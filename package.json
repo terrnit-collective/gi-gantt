@@ -1,0 +1,27 @@
+{
+  "name": "gigantt",
+  "version": "1.0.0",
+  "description": "Headless gantt vue 3 library",
+  "main": "index.js",
+  "scripts": {
+    "test": "pnpm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TerrniTLLC/gi-gantt.git"
+  },
+  "keywords": [
+    "vue",
+    "3",
+    "gantt",
+    "headless",
+    "tailwind",
+    "css"
+  ],
+  "author": "TerrniT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TerrniTLLC/gi-gantt/issues"
+  },
+  "homepage": "https://github.com/TerrniTLLC/gi-gantt#readme"
+}
