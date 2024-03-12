@@ -55,7 +55,7 @@
 
 <script setup lang="ts">
 const config = inject(CONFIG_KEY)
-const { precision, colors } = config
+const { precision, colors } = config!
 const { timeaxisUnits } = useTimeaxisUnits(config)
 </script>
 

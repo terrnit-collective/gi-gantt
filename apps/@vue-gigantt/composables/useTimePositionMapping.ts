@@ -1,6 +1,6 @@
 import { computed } from 'vue'
 
-export const useTimePositionMapping = (config: unknown) => {
+export const useTimePositionMapping = (config: GanttChartConfig) => {
   const { dateFormat, chartSize } = config
   const { chartStartDayjs, chartEndDayjs, toDayjs, format } = useDayjsHelper(config)
 

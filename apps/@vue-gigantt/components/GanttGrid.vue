@@ -19,7 +19,7 @@ defineProps<{
 
 const config = inject(CONFIG_KEY)
 
-const { colors } = config
+const { colors } = config!
 const { timeaxisUnits } = useTimeaxisUnits(config)
 </script>
 

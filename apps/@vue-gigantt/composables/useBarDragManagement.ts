@@ -1,11 +1,7 @@
 
-export const useBarDragManagement = (config:unknown) => {
-//   const { config } = storeToRefs(useGlobalStore())
-
+export const useBarDragManagement = (config: GanttChartConfig) => {
   const _getChartRows = getChartRows()
   const _emitBarEvent = emitBarEvent()
-  //   const { pushOnOverlap, barStart, barEnd, noOverlap, dateFormat } = config.value
-  //   const config = inject(CONFIG_KEY)
 
   const { pushOnOverlap, barStart, barEnd, noOverlap, dateFormat } = config
 

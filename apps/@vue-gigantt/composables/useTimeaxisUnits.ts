@@ -1,7 +1,7 @@
 import { computed } from 'vue'
 import type { ManipulateType } from 'dayjs'
 
-export const useTimeaxisUnits = (config: unknown) => {
+export const useTimeaxisUnits = (config: GanttChartConfig) => {
   const { precision } = config
   const { chartStartDayjs, chartEndDayjs } = useDayjsHelper(config)
 

@@ -1,10 +1,8 @@
 
 export const useBarDragLimit = () => {
-//   const { config } = storeToRefs(useGlobalStore())
-//   const { pushOnOverlap } = config.value
   const config = inject(CONFIG_KEY)
 
-  const { pushOnOverlap } = config
+  const { pushOnOverlap } = config!
   const _getChartRows = getChartRows()
 
   const getBarsFromBundle = (bundle?: string) => {

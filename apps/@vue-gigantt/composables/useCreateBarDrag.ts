@@ -3,12 +3,8 @@ export const useCreateBarDrag = (
   bar: GanttBarObject,
   onDrag: (e: MouseEvent, bar: GanttBarObject) => void = () => null,
   onEndDrag: (e: MouseEvent, bar: GanttBarObject) => void = () => null,
-  config: unknown
+  config: GanttChartConfig
 ) => {
-//   const { config } = storeToRefs(useGlobalStore())
-
-  //   const { barStart, barEnd, pushOnOverlap } = config.value
-  //   const config = inject(CONFIG_KEY)
   const { barStart, barEnd, pushOnOverlap } = config
 
   const isDragging = ref(false)

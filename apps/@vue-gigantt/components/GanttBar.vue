@@ -42,9 +42,6 @@ const props = defineProps<{
 }>()
 const _emitBarEvent = emitBarEvent()
 
-// const { config } = storeToRefs(useGlobalStore())
-
-// const { barStart, barEnd, width, chartStart, chartEnd, chartSize, rowHeight } = config.value
 const config = inject(CONFIG_KEY)
 
 const { barStart, barEnd, width, chartStart, chartEnd, chartSize, rowHeight } = config

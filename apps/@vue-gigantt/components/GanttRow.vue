@@ -76,11 +76,9 @@ const props = defineProps<Props>()
 
 const emit = defineEmits<{(e: 'drop', value: { e: MouseEvent; datetime: string | Date }): void }>()
 
-// const { config } = storeToRefs(useGlobalStore())
 const config = inject(CONFIG_KEY)
 
-// const { rowHeight, colors } = config.value
-const { rowHeight, colors } = config
+const { rowHeight, colors } = config!
 const { highlightOnHover } = toRefs(props)
 const isHovering = ref(false)
 

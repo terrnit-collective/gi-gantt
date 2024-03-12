@@ -5,17 +5,12 @@ import isSameOrBefore from 'dayjs/plugin/isSameOrBefore.js'
 import isSameOrAfter from 'dayjs/plugin/isSameOrAfter.js'
 import isBetween from 'dayjs/plugin/isBetween.js'
 import customParseFormat from 'dayjs/plugin/customParseFormat.js'
-export const useDayjsHelper = (config: unknown) => {
+export const useDayjsHelper = (config: GanttChartConfig) => {
   const dayjs = useDayjs()
   dayjs.extend(isSameOrBefore)
   dayjs.extend(isSameOrAfter)
   dayjs.extend(isBetween)
   dayjs.extend(customParseFormat)
-
-  //   const { config } = storeToRefs(useGlobalStore())
-
-  //   const { chartStart, chartEnd, barStart, barEnd, dateFormat } = config.value
-  //   const config = inject(CONFIG_KEY)
 
   const { chartStart, chartEnd, barStart, barEnd, dateFormat } = config
 
