@@ -1,0 +1,19 @@
+{
+	"extends": "./.nuxt/tsconfig.json",
+	"compilerOptions": {
+	  "module": "es2022",
+	  "target": "ESNext",
+	  "jsx": "preserve",
+	  "importHelpers": true,
+	  "noUnusedLocals": true,
+	  "moduleResolution": "node",
+	  "skipLibCheck": true,
+	  "esModuleInterop": true,
+	  "allowSyntheticDefaultImports": true,
+	  "sourceMap": true,
+	  "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+	},
+	"exclude": ["node_modules", "dist"]
+  }
+  
+

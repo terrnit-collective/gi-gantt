@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "nuxi dev",
+    "dev": "nuxt dev --port=3030",
     "build": "nuxi build",
     "generate": "nuxi generate",
     "preview": "nuxi preview",
