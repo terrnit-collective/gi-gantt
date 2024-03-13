@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+	  "module": "es2022",
+	  "target": "ESNext",
+	  "jsx": "preserve",
+	  "importHelpers": true,
+	  "noUnusedLocals": true,
+	  "moduleResolution": "node",
+	  "skipLibCheck": true,
+	  "esModuleInterop": true,
+	  "allowSyntheticDefaultImports": true,
+	  "sourceMap": true,
+	  "baseUrl": ".",
+	  "paths": {
+		"src/*": ["src/*"],
+		"components/*": ["src/components/*"],
+		"composables/*": ["src/composables/*"],
+		"provider/*": ["src/provider/*"],
+		"types/*": ["src/types/*"],
+		"utils/*": ["src/utils/*"],
+	  },
+	  "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+	},
+	"include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "*.config.js", "**/*.eslintrc.cjs"],
+	"exclude": ["node_modules", "dist"]
+  }

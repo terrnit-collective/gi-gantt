@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "vue-gantt-playground",
   "private": true,
   "type": "module",
   "scripts": {

@@ -19,8 +19,8 @@ defineProps<{
 
 const config = inject(CONFIG_KEY)
 
-const { colors } = config!
-const { timeaxisUnits } = useTimeaxisUnits(config)
+const { colors } = config as GanttChartConfig
+const { timeaxisUnits } = useTimeaxisUnits(config!)
 </script>
 
 <style>

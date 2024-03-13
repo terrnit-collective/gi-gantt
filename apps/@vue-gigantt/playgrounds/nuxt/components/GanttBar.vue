@@ -44,7 +44,7 @@ const _emitBarEvent = emitBarEvent()
 
 const config = inject(CONFIG_KEY)
 
-const { barStart, barEnd, width, chartStart, chartEnd, chartSize, rowHeight } = config
+const { barStart, barEnd, width, chartStart, chartEnd, chartSize, rowHeight } = config!
 
 const xStart = ref<number>(0)
 const xEnd = ref<number>(0)
@@ -53,8 +53,8 @@ const isHover = ref<boolean>(false)
 
 const { bar } = toRefs(props)
 
-const { mapTimeToPosition, mapPositionToTime } = useTimePositionMapping(config)
-const { initDragOfBar, initDragOfBundle } = useBarDragManagement(config)
+const { mapTimeToPosition, mapPositionToTime } = useTimePositionMapping(config!)
+const { initDragOfBar, initDragOfBundle } = useBarDragManagement(config!)
 const { setDragLimitsOfGanttBar } = useBarDragLimit()
 
 const barConfig = computed(() => bar.value.config)
