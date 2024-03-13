@@ -1,7 +1,6 @@
 {
   "name": "@vue-gigantt/module",
   "version": "0.0.1",
-  "private": true,
   "type": "module",
   "description": "A simple and customizable Gantt chart component for Vue.js",
   "main": "./lib/vue-gigantt.umd.js",
