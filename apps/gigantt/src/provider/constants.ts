@@ -1,6 +1,5 @@
+import type { GanttBarObject, GanttChartConfig } from 'types/gantt'
 import type { InjectionKey, Ref } from 'vue'
-
-import type { GanttBarObject, GanttChartConfig } from 'types/index'
 
 export const DEFAULT_DATE_FORMAT = 'YYYY-MM-DD HH:mm'
 

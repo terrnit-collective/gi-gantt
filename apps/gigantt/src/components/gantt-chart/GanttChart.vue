@@ -62,11 +62,11 @@ import {
   GanttTimeAxis,
   GanttGrid,
   GanttBarTooltip
-} from 'components/index'
+} from 'components/plugins'
 
 import { colorSchemes, type ColorSchemeKey } from 'provider/themes'
 import { CHART_ROWS_KEY, CONFIG_KEY, EMIT_BAR_EVENT_KEY } from 'provider/constants'
-import type { GanttBarObject, GanttChartEmits, GanttChartProps } from 'types/index'
+import type { GanttBarObject, GanttChartEmits, GanttChartProps } from 'types/gantt'
 import { DEFAULT_DATE_FORMAT } from 'composables/useDayjsHelper'
 import { useElementSize } from '@vueuse/core'
 

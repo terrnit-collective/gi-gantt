@@ -1,5 +1,6 @@
-import type { GanttBarObject } from 'types/index'
 import { config, getChartRows } from 'provider/index'
+
+import type { GanttBarObject } from 'types/gantt'
 
 export const useBarDragLimit = () => {
   const { pushOnOverlap } = config()

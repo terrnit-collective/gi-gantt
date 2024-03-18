@@ -6,7 +6,7 @@ import isSameOrAfter from 'dayjs/plugin/isSameOrAfter.js'
 import isBetween from 'dayjs/plugin/isBetween.js'
 import customParseFormat from 'dayjs/plugin/customParseFormat.js'
 
-import type { GanttChartConfig, GanttBarObject } from 'types/index'
+import type { GanttChartConfig, GanttBarObject } from 'types/gantt'
 import { config as _config } from 'provider/index'
 
 export const DEFAULT_DATE_FORMAT = 'YYYY-MM-DD HH:mm'

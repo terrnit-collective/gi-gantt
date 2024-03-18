@@ -1,8 +1,8 @@
-import { ref } from 'vue'
-import type { GanttChartConfig, GanttBarObject } from 'types/index'
-import { config as _config } from 'provider/index'
-
+import type { GanttBarObject, GanttChartConfig } from 'types/gantt'
 import { useDayjsHelper, useTimePositionMapping } from 'composables/index'
+
+import { config as _config } from 'provider/index'
+import { ref } from 'vue'
 
 export const useCreateBarDrag = (
   bar: GanttBarObject,

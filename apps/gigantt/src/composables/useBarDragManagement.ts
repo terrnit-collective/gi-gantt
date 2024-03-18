@@ -1,7 +1,7 @@
-import type { GanttBarObject } from 'types/index'
-
+import { config, emitBarEvent, getChartRows } from 'provider/index'
 import { useCreateBarDrag, useDayjsHelper } from 'composables/index'
-import { config, getChartRows, emitBarEvent } from 'provider/index'
+
+import type { GanttBarObject } from 'types/gantt'
 
 export const useBarDragManagement = () => {
   const _config = config()

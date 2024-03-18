@@ -34,7 +34,7 @@ import {
   computed, toRefs, ref, watch, nextTick
 } from 'vue'
 
-import type { GanttBarObject } from 'types/index'
+import type { GanttBarObject } from 'types/gantt'
 import { useDayjsHelper } from 'composables/index'
 import { config } from 'provider/index'
 import { TOOLTIP_FORMATS, DEFAULT_DOT_COLOR } from 'provider/constants'

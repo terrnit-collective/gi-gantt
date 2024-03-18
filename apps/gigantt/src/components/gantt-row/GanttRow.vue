@@ -67,8 +67,8 @@ import {
 
 import { useTimePositionMapping, useSlot } from 'composables/index'
 import { config } from 'provider/index'
-import type { GanttBarObject } from 'types/index'
-import { GanttBar } from 'components/index'
+import type { GanttBarObject } from 'types/gantt'
+import { GanttBar } from 'components/plugins'
 import { BAR_CONTAINER_KEY } from 'provider/constants'
 
 interface Props {

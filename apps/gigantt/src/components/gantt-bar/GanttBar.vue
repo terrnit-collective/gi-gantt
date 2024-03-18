@@ -38,7 +38,7 @@ import {
 } from 'vue'
 
 import { useTimePositionMapping, useBarDragManagement, useBarDragLimit } from 'composables/index'
-import type { GanttBarObject } from 'types/index'
+import type { GanttBarObject } from 'types/gantt'
 import { emitBarEvent as _emitBarEvent, config as _config } from 'provider/index'
 import { BAR_CONTAINER_KEY } from 'provider/constants'
 import { cn } from 'utils/index'

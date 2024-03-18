@@ -1,8 +1,7 @@
-import type { GanttChartConfig } from 'types/index'
-import { computed } from 'vue'
-
-import { useDayjsHelper } from 'composables/index'
+import type { GanttChartConfig } from 'types/gantt'
 import { config as _config } from 'provider/index'
+import { computed } from 'vue'
+import { useDayjsHelper } from 'composables/index'
 
 export const useTimePositionMapping = (config: GanttChartConfig = _config()) => {
   const { dateFormat, chartSize } = config
