@@ -1,9 +1,7 @@
 {
   "name": "@vue-gigantt/module",
   "version": "0.0.1",
-  "type": "module",
   "description": "A simple and customizable Gantt chart component for Vue.js",
-  "main": "./lib/vue-gigantt.umd.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/TerrniTLLC/gi-gantt"
@@ -16,29 +14,25 @@
     "headless",
     "tailwindcss"
   ],
-  "peerDependencies": {
-    "@vueuse/core": "^10.9.0",
-    "dayjs": "^1.11.10",
-    "vue": "^3.4.21"
-  },
-  "module": "./lib/vue-gigantt.es.js",
-  "types": "./lib_types/types/index.d.ts",
+  "type": "module",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.mjs",
+  "unpkg": "dist/gigantt.js",
+  "typings": "dist/types/index.d.ts",
   "author": "Terrnit (@terrnit)",
   "exports": {
     ".": {
-      "import": "./lib/vue-gigantt.es.js",
-      "types": "./lib_types/vue-gigantt.d.ts",
-      "require": "./lib/vue-gigantt.umd.js"
-    },
-    "./dist/style.css": {
-      "import": "./lib/style.css",
-      "require": "./lib/style.css"
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/esm/index.mjs",
+      "require": "./dist/cjs/index.js"
     }
   },
   "files": [
-    "lib_types",
-    "lib/vue-gigantt.js",
-    "lib/vue-gigantt.umd.cjs"
+    "dist",
+    "src",
+    "nuxt",
+    "types/*.d.ts",
+    "README.md"
   ],
   "scripts": {
     "dev": "vite",
@@ -48,9 +42,15 @@
     "build:lib": "vite build",
     "build:types": "vue-tsc --declaration --emitDeclarationOnly --outDir lib_types",
     "type-check": "vue-tsc --build --force",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "publish:lib": "cp ../../README.md . && npm run build:lib && npm publish"
   },
   "dependencies": {
+    "@vueuse/core": "^10.9.0",
+    "dayjs": "^1.11.10",
+    "vue": "^3.4.21"
+  },
+  "peerDependencies": {
     "@vueuse/core": "^10.9.0",
     "dayjs": "^1.11.10",
     "vue": "^3.4.21"

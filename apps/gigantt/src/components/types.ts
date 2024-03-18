@@ -4,7 +4,7 @@ import type { ComponentConfigBase } from 'types/index'
 
 declare module '../index' {
     interface GiganttOptions {
-        ganttrow: ComponentConfigBase &
+        ganttrow?: ComponentConfigBase &
          Partial<{
              /** Icon to be shown */
              icon: string
