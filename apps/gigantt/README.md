@@ -11,10 +11,10 @@ Gigantt is a powerful Vue UI library that allows you to easily integrate interac
 ## Todo
 
 Below are some upcoming features and improvements that we plan to implement in future releases:
-- [] Add support for custom styling options
-- [] Tree table component + styles
-- [] Implement drag-and-drop functionality for tasks
-- [] Enhance documentation with more examples and use cases
+- [ ] Add support for custom styling options
+- [ ] Tree table component + styles
+- [ ] Implement drag-and-drop functionality for tasks
+- [ ] Enhance documentation with more examples and use cases
 
 ## Contributing
 
