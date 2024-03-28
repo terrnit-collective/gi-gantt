@@ -1,0 +1,19 @@
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-left: 2rem;
+    border: solid 0.5px silver;
+    border-left: none;
+    border-right: none;
+    margin-top: -1px;
+}
+
+.cell {
+    flex-grow: 1;
+    flex-basis: 0;
+    box-sizing: border-box;
+    margin-top: -1px;
+    text-align: left;
+    padding: 0.5rem;
+}

@@ -126,11 +126,11 @@ onMounted(() => {
 
   <style>
   .g-gantt-bar {
-	@apply tw-flex tw-justify-center tw-items-center tw-overflow-hidden;
+	@apply flex justify-center items-center overflow-hidden;
   }
 
   .g-gantt-bar-label {
-	@apply tw-w-full tw-h-full tw-box-border tw-flex tw-justify-center tw-items-center;
+	@apply w-full h-full box-border flex justify-center items-center;
   }
 
   .g-gantt-bar-label > * {

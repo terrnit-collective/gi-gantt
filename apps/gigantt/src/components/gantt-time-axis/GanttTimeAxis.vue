@@ -1,5 +1,5 @@
 <template>
-  <div class="g-timeaxis tw-border tw-border-zinc-300 tw-rounded-t-md">
+  <div class="g-timeaxis border border-zinc-300 rounded-t-md">
     <div class="g-timeunits-container">
       <div
         v-for="({ label, value, date, width }, index) in timeaxisUnits.upperUnits"
@@ -26,7 +26,7 @@
       <div
         v-for="({ label, value, date, width }, index) in timeaxisUnits.lowerUnits"
         :key="label"
-        :class="cn('g-timeunit', 'tw-border-zinc-300 tw-border-t tw-border-r')"
+        :class="cn('g-timeunit', 'border-zinc-300 border-t border-r')"
         :style="{
           background: index % 2 === 0 ? colors.ternary : colors.quartenary,
           color: colors.text,
@@ -97,10 +97,10 @@ const { timeaxisUnits } = useTimeaxisUnits()
   }
 
   .g-upper-timeunit:last-child {
-	@apply tw-rounded-tr-md;
+	@apply rounded-tr-md;
   }
   .g-upper-timeunit:first-child {
-	@apply tw-rounded-tl-md;
+	@apply rounded-tl-md;
   }
 
   .g-timeaxis-hour-pin {
